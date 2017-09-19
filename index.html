@@ -1,0 +1,282 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Home</title>
+<meta charset="utf-8">
+<meta name = "format-detection" content = "telephone=no" />
+<link rel="icon" href="images/favicon.ico">
+<link rel="shortcut icon" href="images/favicon.ico" />
+<link rel="stylesheet" href="css/touchTouch.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/slider.css">
+<script src="js/jquery.js"></script>
+<script src="js/jquery-migrate-1.1.1.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/script.js"></script> 
+<script src="js/superfish.js"></script>
+<script src="js/jquery.equalheights.js"></script>
+<script src="js/jquery.mobilemenu.js"></script>
+<script src="js/tmStickUp.js"></script>
+<script src="js/jquery.ui.totop.js"></script>
+<script src="js/touchTouch.jquery.js"></script>
+<script src="js/jquery.shuffle-images.js"></script>
+<script src="js/jssor.slider-22.2.16.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+        jssor_1_slider_init = function() {
+
+            var jssor_1_options = {
+              $AutoPlay: true,
+              $SlideDuration: 800,
+              $SlideEasing: $Jease$.$OutQuint,
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $BulletNavigatorOptions: {
+                $Class: $JssorBulletNavigator$
+              }
+            };
+
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+            /*responsive code begin*/
+            /*remove responsive code if you don't want the slider scales while window resizing*/
+            function ScaleSlider() {
+                var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+                if (refSize) {
+                    refSize = Math.min(refSize, 1920);
+                    jssor_1_slider.$ScaleWidth(refSize);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+            ScaleSlider();
+            $Jssor$.$AddEvent(window, "load", ScaleSlider);
+            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+            /*responsive code end*/
+        };
+    </script>
+<script>
+  $(window).load(function(){
+    $().UItoTop({ easingType: 'easeOutQuart' });
+    $('.gallery .info').touchTouch();
+  }); 
+
+   $(document).ready(function(){
+       $(".shuffle-me").shuffleImages({
+         target: ".images > img"
+       });
+    });
+</script>
+</head>
+
+<body class="page1" id="top">
+  <div class="main">
+<!--==============================
+              header
+=================================-->
+<header>
+  <div class="container">
+    <div class="row">
+      <div class="grid_12">
+          <a href="index.html">
+            <img src="images/logo1.png" alt="Logo alt" height="80" width="230">
+          </a>
+        <div class="socials">
+          <a href="https://www.facebook.com/ShubhMuhuratt/" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-youtube"></a>
+        </div>
+        <div class="navigation ">
+          <nav>
+            <ul class="sf-menu">
+             <li class="current"><a href="index.html">Home</a></li>
+             <li><a href="about.jsp">About Us</a></li>
+             <li><a href="services.jsp">Services</a></li>
+             <li><a href="gallery.jsp">Gallery</a></li>
+             <li><a href="contact.jsp">Contact Us</a></li>
+             <li><a href="contact.jsp">Booking</a></li>
+             <li><a href="contact.jsp">Login</a></li>
+           </ul>
+          </nav>
+          <div class="clear"></div>
+        </div>       
+      </div>
+    </div>
+  </div>
+</header>
+<!--=====================
+          Content
+======================-->
+<div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:1300px;height:520px;overflow:hidden;visibility:hidden;">
+        <!-- Loading Screen -->
+        <div data-u="loading" class="jssorl-oval" style="position:absolute;top:0px;left:0px;text-align:center;background-color:rgba(0,0,0,0.7);">
+            <img style="margin-top:-19.0px;position:relative;top:50%;width:38px;height:38px;" src="images/oval.svg" />
+        </div>
+        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:1300px;height:520px;overflow:hidden;">
+            <div>
+                <img data-u="image" src="images/index1.jpg" />
+                <div style="position:absolute;top:85px;left:100px;width:600px;height:120px;z-index:0;background-color:rgba(0,0,0,0.5);">
+                    <div style="position:absolute;top:15px;left:15px;width:500px;height:40px;z-index:0;font-size:30px;color:#ffffff;line-height:40px;">We Make Your Events More Special</div>
+                    <div style="position:absolute;top:60px;left:15px;width:570px;height:40px;z-index:0;font-size:22px;color:#ffffff;line-height:38px;">Keep Calm And Hire Us :)</div>
+                </div>
+                <div style="position:absolute;top:370px;left:100px;width:600px;height:120px;z-index:0;background-color:rgba(255,255,255,0.5);">
+                    <div style="position:absolute;top:15px;left:15px;width:500px;height:40px;z-index:0;font-size:30px;color:#000000;line-height:40px;">Contact Us For Any Event</div>
+                    <div style="position:absolute;top:60px;left:15px;width:500px;height:40px;z-index:0;font-size:22px;color:#000000;line-height:38px;">Wedding, Birthday Parties, Live Events And More</div>
+                </div>
+            </div>
+            <div>
+                <img data-u="image" src="images/index2.jpg" />
+                <div style="position:absolute;top:85px;left:100px;width:600px;height:120px;z-index:0;background-color:rgba(0,0,0,0.5);">
+                    <div style="position:absolute;top:15px;left:15px;width:500px;height:40px;z-index:0;font-size:30px;color:#ffffff;line-height:40px;">We Make Your Events More Special</div>
+                    <div style="position:absolute;top:60px;left:15px;width:570px;height:40px;z-index:0;font-size:22px;color:#ffffff;line-height:38px;">Keep Calm And Hire Us :)</div>
+                </div>
+                <div style="position:absolute;top:370px;left:100px;width:600px;height:120px;z-index:0;background-color:rgba(255,255,255,0.5);">
+                    <div style="position:absolute;top:15px;left:15px;width:500px;height:40px;z-index:0;font-size:30px;color:#000000;line-height:40px;">Contact Us For Any Event</div>
+                    <div style="position:absolute;top:60px;left:15px;width:500px;height:40px;z-index:0;font-size:22px;color:#000000;line-height:38px;">Wedding, Birthday Parties, Live Events And More</div>
+                </div>
+            </div>
+            <div>
+                <img data-u="image" src="images/index.jpg" />
+                <div style="position:absolute;top:85px;left:100px;width:600px;height:120px;z-index:0;background-color:rgba(0,0,0,0.5);">
+                    <div style="position:absolute;top:15px;left:15px;width:500px;height:40px;z-index:0;font-size:30px;color:#ffffff;line-height:40px;">We Make Your Events More Special</div>
+                    <div style="position:absolute;top:60px;left:15px;width:570px;height:40px;z-index:0;font-size:22px;color:#ffffff;line-height:38px;">Keep Calm And Hire Us :)</div>
+                </div>
+                <div style="position:absolute;top:370px;left:100px;width:600px;height:120px;z-index:0;background-color:rgba(255,255,255,0.5);">
+                    <div style="position:absolute;top:15px;left:15px;width:500px;height:40px;z-index:0;font-size:30px;color:#000000;line-height:40px;">Contact Us For Any Event</div>
+                    <div style="position:absolute;top:60px;left:15px;width:500px;height:40px;z-index:0;font-size:22px;color:#000000;line-height:38px;">Wedding, Birthday Parties, Live Events And More</div>
+                </div>
+            </div>
+        </div>
+        <!-- Bullet Navigator -->
+        <div data-u="navigator" class="jssorb05" style="bottom:16px;right:16px;" data-autocenter="1">
+            <!-- bullet navigator item prototype -->
+            <div data-u="prototype" style="width:16px;height:16px;"></div>
+        </div>
+        <!-- Arrow Navigator -->
+        <span data-u="arrowleft" class="jssora22l" style="top:0px;left:8px;width:40px;height:58px;" data-autocenter="2"></span>
+        <span data-u="arrowright" class="jssora22r" style="top:0px;right:8px;width:40px;height:58px;" data-autocenter="2"></span>
+    </div>
+    <script type="text/javascript">jssor_1_slider_init();</script>
+    <!-- #endregion Jssor Slider End -->
+
+      <div class="clear"></div>
+      <div class="grid_10 preffix_1">
+        <div class="block1">
+          <div class="block1_title">
+           It's Not Just About Ideas, It's About Making Ideas Happen
+            <span>Connect With Shubh Muhurat Team And We Have The Best ideas For Your Parties</span><br>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <div class="shuffle-group">
+    <div class="container">
+      <div class="row">
+        <div class="grid_8">
+           <div data-si-mousemove-trigger="100" class="shuffle-me">
+            <a href="wedding.jsp" class="info"><div class="shuffle_title"> Wedding Planning<span>More</span></div></a>
+            <div class="images">
+              <img src="images/index3.jpg" alt="">
+              <img src="images/index4.jpg" alt="">
+              <img src="images/index5.jpg" alt="">
+            </div></div>
+        </div>
+        <div class="grid_4">
+           <div data-si-mousemove-trigger="100" class="shuffle-me shuff__1">
+            <a href="birthday.jsp" class="info"><div class="shuffle_title"> Birthday Parties<span>More</span></div></a>
+            <div class="images">
+              <img src="images/index6.jpg" alt="">
+              <img src="images/index7.jpg" alt="">
+              <img src="images/index8.jpg" alt="">
+            </div></div>
+             <div data-si-mousemove-trigger="100" class="shuffle-me shuff__1">
+            <a href="corporate.jsp" class="info"><div class="shuffle_title">Corporate Event <span>More</span></div></a>
+            <div class="images">
+              <img src="images/page1_img6.jpg" alt="">
+              <img src="images/shuffle_5.jpg" alt="">
+              <img src="images/shuffle_6.jpg" alt="">
+            </div></div>
+        </div>
+        <div class="grid_12">
+          <h3>Welcome</h3>
+          <img src="images/page1_img7.jpg" alt="" class="img_inner fleft">
+          <div class="extra_wrapper">
+            <p class="text1">Thank you so much for going through our official website of Shubh Muhurat.</p>
+            <p class="text1 offset__1">As in our today's world, day by day you all are getting busy in our professional and personal life, So you all find difficulties in planning any event. But don't you worry we are here for your help. Shubh Muhurat team takes all your worries and plan your events according to your taste and budget.</p>
+             <br> <a href="about.jsp" class="link1">More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>  
+  <div class="container gallery">
+    <div class="row">
+      <div class="grid_8">
+        <h4>Recent Events</h4>
+        <div class="row">
+          <div class="grid_4">
+            <div class="view">  
+              <img src="images/page1_img8.jpg" alt="" />  
+              <div class="mask">
+                <a href="images/gallery/big1.jpg" class="info fa fa-search" title="Full Image"></a>  
+              </div>  
+            </div>   
+          </div>
+          <div class="grid_4">
+            <div class="view">  
+              <img src="images/page1_img9.jpg" alt="" />  
+              <div class="mask">
+                <a href="images/gallery/big2.jpg" class="info fa fa-search" title="Full Image"></a>  
+              </div>  
+            </div>   
+          </div>
+          <div class="grid_4">
+            <div class="view">  
+              <img src="images/page1_img10.jpg" alt="" />  
+              <div class="mask">
+                <a href="images/gallery/big3.jpg" class="info fa fa-search" title="Full Image"></a>  
+              </div>  
+            </div>   
+          </div>
+          <div class="grid_4">
+            <div class="view">  
+              <img src="images/page1_img11.jpg" alt="" />  
+              <div class="mask">
+                <a href="images/gallery/big4.jpg" class="info fa fa-search" title="Full Image"></a>  
+              </div> 
+            </div>   
+          </div>
+            
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--==============================
+              footer
+=================================-->
+<footer id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="grid_12"> 
+        <div class="copyright"><a href="#" class="f_logo"></a> &copy; <span id="copyright-year"></span>| Shubh Muhurat, All Rights Reserved. 
+       
+      
+      </div>
+    </div>
+
+  </div>  
+</footer>
+<a href="#" id="toTop" class="fa fa-chevron-up"></a>
+</div>
+</body>
+
+</html>
+
+
